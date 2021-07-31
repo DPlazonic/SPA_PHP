@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="jumbotron text-center p-3 bg-light">
+    <h2>Spa Php</h2>
+    <button id="accBtn" class="btn btn-primary">Accounts</button>
+    <button id="addAccBtn" class="btn btn-info">Add Account</button>
+    <button id="editDeleteAccBtn" class="btn btn-warning">Edit/Delete</button>
+  </div>
+
+  <!-- main section -->
+<section id="main-view">
+  <div class="container">
+    <div class="row">
+      <h4 class="display-4">Accounts</h4>
+      <div class="col-8 offset-2">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Deposit</th>
+              <th>Credit Card</th>
+            </tr>
+          </thead>
+        <tbody id="mainTbody">
+
+        </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- add acc section -->
+
+</section>
+<section id="add-form-view">
+  <div class="container text-center">
+    <div class="row">
+      <h4 class="display-4">Add Account</h4>
+      <div class="col-8 offset-2">
+        <input type="text" name="name" placeholder="name" class="form-control"><br>
+        <input type="text" name="deposit" placeholder="deposit" class="form-control"><br>
+        <input type="text" name="credit_card" placeholder="credit_card" class="form-control"><br>
+        <button id="saveBtn" class="btn btn-primary form-control">Save</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- edit/delete section -->
+
+  <section id="edit-delete-view">
+    <div class="container">
+      <div class="row">
+        <h4 class="display-4">Edit/Delete Account</h4>
+        <div class="col-8 offset-2">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Deposit</th>
+                <th>Credit Card</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+          <tbody id="editDeleteTbody">
+  
+          </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- edit form -->
+
+
+</section>
+<section id="edit-form-view">
+  <div class="container text-center">
+    <div class="row">
+      <h4 class="display-4">Edit Account</h4>
+      <div class="col-8 offset-2">
+        <input type="hidden" name="edit-id">
+        <input type="text" name="edit-name" placeholder="name" class="form-control"><br>
+        <input type="text" name="edit-deposit" placeholder="deposit" class="form-control"><br>
+        <input type="text" name="edit-credit_card" placeholder="credit_card" class="form-control"><br>
+        <button id="editFormBtn" class="mb-2 btn btn-warning form-control">Edit</button>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <script src="js/main.js" charset="utf-8"></script>
+</body>
+</html>
